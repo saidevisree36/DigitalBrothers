@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Flex Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Content Boxes */
+.box {
+    flex: 1 1 45%;
+    background-color: #e0f7fa;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Make elements full width on smaller screens */
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Mobile Style */
+@media (max-width: 768px) {
+    .cta-button {
+        background-color: green;
+        font-size: 16px;
+    }
+}
+
+.cta-desktop {
+    background-color: blue;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.cta-mobile {
+    background-color: orange;
+    font-size: 16px;
+    padding: 10px;
+}
